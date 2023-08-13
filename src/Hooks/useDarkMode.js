@@ -9,11 +9,13 @@ function useDarkMode(){
 
 
 useEffect(()=>{
-    const root = window className="document documentElement"
-    root.classsList.remove(colorTheme)
+    const root = window.document.documentElement
+    root.classsList.remove(colorTheme) 
     root.classsList.add(theme)
-    localStorage
-})
+    localStorage.setItem('theme', theme)
+}, [theme, colorTheme])
+
+return [colorTheme, setTheme]
 }
 
 
