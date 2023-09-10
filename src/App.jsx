@@ -1,6 +1,6 @@
 import React from "react";
-import Center from "./componant/Center";
-import Header from "./componant/Header";
+import Center from "./components/Center";
+import Header from "./components/Header";
 
 function App() {
   return (
